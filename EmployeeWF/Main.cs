@@ -39,5 +39,45 @@ namespace EmployeeWF
                 this.Hide();
             }
         }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dashboard_btn_Click(object sender, EventArgs e)
+        {
+            dashboard1.Visible = true;
+            addEmployee1.Visible = false;
+            department1.Visible = false;
+
+            Dashboard dashForm = dashboard1 as Dashboard;
+
+        }
+
+        private void addemployee_btn_Click(object sender, EventArgs e)
+        {
+            dashboard1.Visible = false;
+            addEmployee1.Visible = true;
+            department1.Visible = false;
+
+            AddEmployee addEmForm = addEmployee1 as AddEmployee;
+        }
+
+        private void department_btn_Click(object sender, EventArgs e)
+        { 
+            dashboard1.Visible = false;
+            addEmployee1.Visible = false;
+            department1.Visible = true;
+
+            AddEmployee addEmForm = addEmployee1 as AddEmployee;
+
+
+        }
     }
 }
