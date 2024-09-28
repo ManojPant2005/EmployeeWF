@@ -48,7 +48,7 @@ namespace EmployeeWF
                 || login_password.Text == "")
             {
                 MessageBox.Show("Please fill all blank fields"
-                    , "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    , "Error Message", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
             }
             else
             {

@@ -217,7 +217,7 @@
             // 
             dashboard1.Location = new Point(221, 43);
             dashboard1.Name = "dashboard1";
-            dashboard1.Size = new Size(879, 557);
+            dashboard1.Size = new Size(876, 557);
             dashboard1.TabIndex = 4;
             // 
             // Main

@@ -46,10 +46,10 @@ namespace EmployeeWF
                             EmployeeData ed = new EmployeeData();
                             ed.ID = (int)reader["id"];
                             ed.EmployeeID = reader["employee_id"].ToString();
-                            ed.Name = reader["fullname"].ToString();
+                            ed.Name = reader["full_name"].ToString();
                             ed.Gender = reader["gender"].ToString();
                             ed.Contact = reader["contact_number"].ToString();
-                            ed.Position = reader["department"].ToString();
+                            ed.Position = reader["position"].ToString();
                             ed.Image = reader["image"].ToString();
                             ed.Salary = (int)reader["salary"];
                             ed.Status = reader["status"].ToString();
@@ -91,8 +91,8 @@ namespace EmployeeWF
                         {
                             EmployeeData ed = new EmployeeData();
                             ed.EmployeeID = reader["employee_id"].ToString();
-                            ed.Name = reader["fullname"].ToString();
-                            ed.Position = reader["department"].ToString();
+                            ed.Name = reader["full_name"].ToString();
+                            ed.Position = reader["position"].ToString();
                             ed.Salary = (int)reader["salary"];
 
                             listdata.Add(ed);
