@@ -54,7 +54,8 @@ namespace EmployeeWF
         {
             dashboard1.Visible = true;
             addEmployee1.Visible = false;
-            department1.Visible = false;
+            salary1.Visible = false;    
+
 
             Dashboard dashForm = dashboard1 as Dashboard;
 
@@ -64,7 +65,7 @@ namespace EmployeeWF
         {
             dashboard1.Visible = false;
             addEmployee1.Visible = true;
-            department1.Visible = false;
+            salary1.Visible = false;
 
             AddEmployee addEmForm = addEmployee1 as AddEmployee;
         }
@@ -73,7 +74,7 @@ namespace EmployeeWF
         { 
             dashboard1.Visible = false;
             addEmployee1.Visible = false;
-            department1.Visible = true;
+            salary1.Visible = true;
 
             AddEmployee addEmForm = addEmployee1 as AddEmployee;
 

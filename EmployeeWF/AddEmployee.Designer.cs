@@ -30,19 +30,19 @@
         {
             label1 = new Label();
             panel2 = new Panel();
-            comboBox1 = new ComboBox();
+            status = new ComboBox();
             addemployee_status = new Label();
             label6 = new Label();
-            addEmployee_department = new ComboBox();
+            addEmployee_position = new ComboBox();
             addEmployee_clearbtn = new Button();
             addEmployee_deletebtn = new Button();
             addEmployee_updatebtn = new Button();
-            addEmployee_addbtn = new Button();
-            addEmployee_importbtn = new Button();
-            pictureBox1 = new PictureBox();
-            addEmployee_phone = new TextBox();
+            addEmployee_addBtn_Click = new Button();
+            addEmployee_importBtn = new Button();
+            addEmployee_picture = new PictureBox();
+            addEmployee_phoneNum = new TextBox();
             label5 = new Label();
-            addEmployee_fullname = new TextBox();
+            addEmployee_fullName = new TextBox();
             addEmployee_id = new TextBox();
             label4 = new Label();
             addEmployee_gender = new ComboBox();
@@ -50,7 +50,7 @@
             label2 = new Label();
             dataGridView1 = new DataGridView();
             panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)addEmployee_picture).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -67,19 +67,19 @@
             // 
             // panel2
             // 
-            panel2.Controls.Add(comboBox1);
+            panel2.Controls.Add(status);
             panel2.Controls.Add(addemployee_status);
             panel2.Controls.Add(label6);
-            panel2.Controls.Add(addEmployee_department);
+            panel2.Controls.Add(addEmployee_position);
             panel2.Controls.Add(addEmployee_clearbtn);
             panel2.Controls.Add(addEmployee_deletebtn);
             panel2.Controls.Add(addEmployee_updatebtn);
-            panel2.Controls.Add(addEmployee_addbtn);
-            panel2.Controls.Add(addEmployee_importbtn);
-            panel2.Controls.Add(pictureBox1);
-            panel2.Controls.Add(addEmployee_phone);
+            panel2.Controls.Add(addEmployee_addBtn_Click);
+            panel2.Controls.Add(addEmployee_importBtn);
+            panel2.Controls.Add(addEmployee_picture);
+            panel2.Controls.Add(addEmployee_phoneNum);
             panel2.Controls.Add(label5);
-            panel2.Controls.Add(addEmployee_fullname);
+            panel2.Controls.Add(addEmployee_fullName);
             panel2.Controls.Add(addEmployee_id);
             panel2.Controls.Add(label4);
             panel2.Controls.Add(addEmployee_gender);
@@ -90,14 +90,14 @@
             panel2.Size = new Size(845, 260);
             panel2.TabIndex = 1;
             // 
-            // comboBox1
+            // status
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Active", "Inactive" });
-            comboBox1.Location = new Point(517, 118);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(182, 28);
-            comboBox1.TabIndex = 17;
+            status.FormattingEnabled = true;
+            status.Items.AddRange(new object[] { "Active", "Inactive" });
+            status.Location = new Point(517, 118);
+            status.Name = "status";
+            status.Size = new Size(182, 28);
+            status.TabIndex = 17;
             // 
             // addemployee_status
             // 
@@ -119,14 +119,14 @@
             label6.TabIndex = 15;
             label6.Text = "Department";
             // 
-            // addEmployee_department
+            // addEmployee_position
             // 
-            addEmployee_department.FormattingEnabled = true;
-            addEmployee_department.Items.AddRange(new object[] { "IT", "Sales", "Development", "Senior", "Junior", "Fresher", "HR", "Manager", "Client", "Tester", "QA", "Network" });
-            addEmployee_department.Location = new Point(517, 72);
-            addEmployee_department.Name = "addEmployee_department";
-            addEmployee_department.Size = new Size(182, 28);
-            addEmployee_department.TabIndex = 14;
+            addEmployee_position.FormattingEnabled = true;
+            addEmployee_position.Items.AddRange(new object[] { "IT", "Sales", "Development", "Senior", "Junior", "Fresher", "HR", "Manager", "Client", "Tester", "QA", "Network" });
+            addEmployee_position.Location = new Point(517, 72);
+            addEmployee_position.Name = "addEmployee_position";
+            addEmployee_position.Size = new Size(182, 28);
+            addEmployee_position.TabIndex = 14;
             // 
             // addEmployee_clearbtn
             // 
@@ -145,7 +145,7 @@
             addEmployee_clearbtn.TabIndex = 13;
             addEmployee_clearbtn.Text = "Clear";
             addEmployee_clearbtn.UseVisualStyleBackColor = false;
-            addEmployee_clearbtn.Click += addEmployee_clearbtn_Click;
+            addEmployee_clearbtn.Click += addEmployee_clearbtn_Click_1;
             // 
             // addEmployee_deletebtn
             // 
@@ -164,6 +164,7 @@
             addEmployee_deletebtn.TabIndex = 12;
             addEmployee_deletebtn.Text = "Delete";
             addEmployee_deletebtn.UseVisualStyleBackColor = false;
+            addEmployee_deletebtn.Click += addEmployee_deletebtn_Click_1;
             // 
             // addEmployee_updatebtn
             // 
@@ -182,59 +183,58 @@
             addEmployee_updatebtn.TabIndex = 11;
             addEmployee_updatebtn.Text = "Update";
             addEmployee_updatebtn.UseVisualStyleBackColor = false;
-            addEmployee_updatebtn.Click += addEmployee_updatebtn_Click;
+            addEmployee_updatebtn.Click += addEmployee_updatebtn_Click_1;
             // 
-            // addEmployee_addbtn
+            // addEmployee_addBtn_Click
             // 
-            addEmployee_addbtn.BackColor = Color.FromArgb(33, 8, 97);
-            addEmployee_addbtn.Cursor = Cursors.Hand;
-            addEmployee_addbtn.FlatAppearance.BorderSize = 0;
-            addEmployee_addbtn.FlatAppearance.CheckedBackColor = Color.FromArgb(33, 8, 97);
-            addEmployee_addbtn.FlatAppearance.MouseDownBackColor = Color.FromArgb(33, 8, 97);
-            addEmployee_addbtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(33, 8, 97);
-            addEmployee_addbtn.FlatStyle = FlatStyle.Flat;
-            addEmployee_addbtn.Font = new Font("Tahoma", 10.8F);
-            addEmployee_addbtn.ForeColor = Color.White;
-            addEmployee_addbtn.Location = new Point(122, 207);
-            addEmployee_addbtn.Name = "addEmployee_addbtn";
-            addEmployee_addbtn.Size = new Size(100, 40);
-            addEmployee_addbtn.TabIndex = 10;
-            addEmployee_addbtn.Text = "Add";
-            addEmployee_addbtn.UseVisualStyleBackColor = false;
-            addEmployee_addbtn.Click += addEmployee_addbtn_Click;
+            addEmployee_addBtn_Click.BackColor = Color.FromArgb(33, 8, 97);
+            addEmployee_addBtn_Click.Cursor = Cursors.Hand;
+            addEmployee_addBtn_Click.FlatAppearance.BorderSize = 0;
+            addEmployee_addBtn_Click.FlatAppearance.CheckedBackColor = Color.FromArgb(33, 8, 97);
+            addEmployee_addBtn_Click.FlatAppearance.MouseDownBackColor = Color.FromArgb(33, 8, 97);
+            addEmployee_addBtn_Click.FlatAppearance.MouseOverBackColor = Color.FromArgb(33, 8, 97);
+            addEmployee_addBtn_Click.FlatStyle = FlatStyle.Flat;
+            addEmployee_addBtn_Click.Font = new Font("Tahoma", 10.8F);
+            addEmployee_addBtn_Click.ForeColor = Color.White;
+            addEmployee_addBtn_Click.Location = new Point(122, 207);
+            addEmployee_addBtn_Click.Name = "addEmployee_addBtn_Click";
+            addEmployee_addBtn_Click.Size = new Size(100, 40);
+            addEmployee_addBtn_Click.TabIndex = 10;
+            addEmployee_addBtn_Click.Text = "Add";
+            addEmployee_addBtn_Click.UseVisualStyleBackColor = false;
+            addEmployee_addBtn_Click.Click += addEmployee_addBtn_Click_Click;
             // 
-            // addEmployee_importbtn
+            // addEmployee_importBtn
             // 
-            addEmployee_importbtn.BackColor = Color.FromArgb(33, 8, 97);
-            addEmployee_importbtn.Cursor = Cursors.Hand;
-            addEmployee_importbtn.FlatStyle = FlatStyle.Flat;
-            addEmployee_importbtn.Font = new Font("Tahoma", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            addEmployee_importbtn.ForeColor = SystemColors.ButtonHighlight;
-            addEmployee_importbtn.Location = new Point(725, 126);
-            addEmployee_importbtn.Name = "addEmployee_importbtn";
-            addEmployee_importbtn.Size = new Size(100, 34);
-            addEmployee_importbtn.TabIndex = 9;
-            addEmployee_importbtn.Text = "Import ";
-            addEmployee_importbtn.UseVisualStyleBackColor = false;
-            addEmployee_importbtn.Click += addEmployee_importbtn_Click;
+            addEmployee_importBtn.BackColor = Color.FromArgb(33, 8, 97);
+            addEmployee_importBtn.Cursor = Cursors.Hand;
+            addEmployee_importBtn.FlatStyle = FlatStyle.Flat;
+            addEmployee_importBtn.Font = new Font("Tahoma", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            addEmployee_importBtn.ForeColor = SystemColors.ButtonHighlight;
+            addEmployee_importBtn.Location = new Point(725, 126);
+            addEmployee_importBtn.Name = "addEmployee_importBtn";
+            addEmployee_importBtn.Size = new Size(100, 34);
+            addEmployee_importBtn.TabIndex = 9;
+            addEmployee_importBtn.Text = "Import ";
+            addEmployee_importBtn.UseVisualStyleBackColor = false;
+            addEmployee_importBtn.Click += addEmployee_importBtn_Click_1;
             // 
-            // pictureBox1
+            // addEmployee_picture
             // 
-            pictureBox1.BackColor = SystemColors.ButtonShadow;
-            pictureBox1.Location = new Point(725, 27);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(100, 100);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 8;
-            pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
+            addEmployee_picture.BackColor = SystemColors.ButtonShadow;
+            addEmployee_picture.Location = new Point(725, 27);
+            addEmployee_picture.Name = "addEmployee_picture";
+            addEmployee_picture.Size = new Size(100, 100);
+            addEmployee_picture.SizeMode = PictureBoxSizeMode.StretchImage;
+            addEmployee_picture.TabIndex = 8;
+            addEmployee_picture.TabStop = false;
             // 
-            // addEmployee_phone
+            // addEmployee_phoneNum
             // 
-            addEmployee_phone.Location = new Point(517, 27);
-            addEmployee_phone.Name = "addEmployee_phone";
-            addEmployee_phone.Size = new Size(182, 27);
-            addEmployee_phone.TabIndex = 7;
+            addEmployee_phoneNum.Location = new Point(517, 27);
+            addEmployee_phoneNum.Name = "addEmployee_phoneNum";
+            addEmployee_phoneNum.Size = new Size(182, 27);
+            addEmployee_phoneNum.TabIndex = 7;
             // 
             // label5
             // 
@@ -246,12 +246,12 @@
             label5.TabIndex = 6;
             label5.Text = "Phone Number";
             // 
-            // addEmployee_fullname
+            // addEmployee_fullName
             // 
-            addEmployee_fullname.Location = new Point(146, 72);
-            addEmployee_fullname.Name = "addEmployee_fullname";
-            addEmployee_fullname.Size = new Size(227, 27);
-            addEmployee_fullname.TabIndex = 5;
+            addEmployee_fullName.Location = new Point(146, 72);
+            addEmployee_fullName.Name = "addEmployee_fullName";
+            addEmployee_fullName.Size = new Size(227, 27);
+            addEmployee_fullName.TabIndex = 5;
             // 
             // addEmployee_id
             // 
@@ -321,7 +321,7 @@
             Size = new Size(875, 554);
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)addEmployee_picture).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -330,24 +330,24 @@
         #endregion
         private Label label1;
         private Panel panel2;
-        private TextBox addEmployee_fullname;
+        private TextBox addEmployee_fullName;
         private TextBox addEmployee_id;
         private Label label4;
         private ComboBox addEmployee_gender;
         private Label label3;
         private Label label2;
-        private Button addEmployee_importbtn;
-        private PictureBox pictureBox1;
-        private TextBox addEmployee_phone;
+        private Button addEmployee_importBtn;
+        private PictureBox addEmployee_picture;
+        private TextBox addEmployee_phoneNum;
         private Label label5;
         private Button addEmployee_clearbtn;
         private Button addEmployee_deletebtn;
         private Button addEmployee_updatebtn;
-        private Button addEmployee_addbtn;
+        private Button addEmployee_addBtn_Click;
         private Label label6;
-        private ComboBox addEmployee_department;
+        private ComboBox addEmployee_position;
         private DataGridView dataGridView1;
-        private ComboBox comboBox1;
+        private ComboBox status;
         private Label addemployee_status;
     }
 }

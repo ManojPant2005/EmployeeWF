@@ -58,26 +58,26 @@
             panel1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(264, 400);
+            panel1.Size = new Size(388, 641);
             panel1.TabIndex = 0;
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(63, 55);
+            pictureBox1.Location = new Point(99, 112);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(100, 100);
+            pictureBox1.Size = new Size(129, 123);
             pictureBox1.TabIndex = 3;
             pictureBox1.TabStop = false;
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Font = new Font("Tahoma", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.Font = new Font("Tahoma", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label6.ForeColor = Color.White;
-            label6.Location = new Point(11, 174);
+            label6.Location = new Point(11, 257);
             label6.Name = "label6";
-            label6.Size = new Size(238, 18);
+            label6.Size = new Size(328, 28);
             label6.TabIndex = 2;
             label6.Text = "Employee Management System";
             // 
@@ -86,9 +86,9 @@
             login_singup.BackColor = Color.FromArgb(33, 8, 97);
             login_singup.Font = new Font("Arial", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             login_singup.ForeColor = Color.White;
-            login_singup.Location = new Point(3, 350);
+            login_singup.Location = new Point(47, 581);
             login_singup.Name = "login_singup";
-            login_singup.Size = new Size(256, 37);
+            login_singup.Size = new Size(263, 54);
             login_singup.TabIndex = 1;
             login_singup.Text = "SIGN UP";
             login_singup.UseVisualStyleBackColor = false;
@@ -97,10 +97,11 @@
             // label5
             // 
             label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label5.ForeColor = Color.White;
-            label5.Location = new Point(54, 317);
+            label5.Location = new Point(70, 539);
             label5.Name = "label5";
-            label5.Size = new Size(162, 20);
+            label5.Size = new Size(199, 25);
             label5.TabIndex = 0;
             label5.Text = "Register your account";
             label5.Click += label5_Click;
@@ -109,10 +110,10 @@
             // 
             exit.AutoSize = true;
             exit.Cursor = Cursors.Hand;
-            exit.Font = new Font("Tahoma", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            exit.Location = new Point(543, 9);
+            exit.Font = new Font("Tahoma", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            exit.Location = new Point(925, 9);
             exit.Name = "exit";
-            exit.Size = new Size(20, 22);
+            exit.Size = new Size(22, 24);
             exit.TabIndex = 1;
             exit.Text = "X";
             exit.Click += exit_Click;
@@ -120,30 +121,30 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Bahnschrift", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(300, 90);
+            label2.Font = new Font("Bahnschrift", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.Location = new Point(436, 88);
             label2.Name = "label2";
-            label2.Size = new Size(159, 28);
+            label2.Size = new Size(206, 36);
             label2.TabIndex = 2;
             label2.Text = "Login Account";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Tahoma", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(284, 151);
+            label3.Font = new Font("Tahoma", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.Location = new Point(515, 188);
             label3.Name = "label3";
-            label3.Size = new Size(91, 21);
+            label3.Size = new Size(107, 24);
             label3.TabIndex = 3;
             label3.Text = "Username:";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Font = new Font("Tahoma", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label4.Location = new Point(284, 219);
+            label4.Font = new Font("Tahoma", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label4.Location = new Point(515, 296);
             label4.Name = "label4";
-            label4.Size = new Size(87, 21);
+            label4.Size = new Size(101, 24);
             label4.TabIndex = 4;
             label4.Text = "Password:";
             // 
@@ -151,10 +152,10 @@
             // 
             login_username.BorderStyle = BorderStyle.FixedSingle;
             login_username.Font = new Font("Tahoma", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            login_username.Location = new Point(288, 175);
+            login_username.Location = new Point(515, 237);
             login_username.Multiline = true;
             login_username.Name = "login_username";
-            login_username.Size = new Size(263, 30);
+            login_username.Size = new Size(307, 39);
             login_username.TabIndex = 5;
             login_username.TextChanged += textBox1_TextChanged;
             // 
@@ -162,11 +163,11 @@
             // 
             login_password.BorderStyle = BorderStyle.FixedSingle;
             login_password.Font = new Font("Tahoma", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            login_password.Location = new Point(284, 256);
+            login_password.Location = new Point(515, 340);
             login_password.Multiline = true;
             login_password.Name = "login_password";
             login_password.PasswordChar = '*';
-            login_password.Size = new Size(263, 30);
+            login_password.Size = new Size(307, 40);
             login_password.TabIndex = 6;
             // 
             // login_btn
@@ -174,9 +175,9 @@
             login_btn.BackColor = Color.FromArgb(33, 8, 97);
             login_btn.Font = new Font("Arial Narrow", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             login_btn.ForeColor = Color.White;
-            login_btn.Location = new Point(284, 318);
+            login_btn.Location = new Point(515, 485);
             login_btn.Name = "login_btn";
-            login_btn.Size = new Size(94, 40);
+            login_btn.Size = new Size(127, 57);
             login_btn.TabIndex = 7;
             login_btn.Text = "LOGIN";
             login_btn.UseVisualStyleBackColor = false;
@@ -185,10 +186,10 @@
             // login_showPass
             // 
             login_showPass.AutoSize = true;
-            login_showPass.Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            login_showPass.Location = new Point(415, 303);
+            login_showPass.Font = new Font("Tahoma", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            login_showPass.Location = new Point(667, 415);
             login_showPass.Name = "login_showPass";
-            login_showPass.Size = new Size(130, 22);
+            login_showPass.Size = new Size(155, 26);
             login_showPass.TabIndex = 8;
             login_showPass.Text = "Show Password";
             login_showPass.UseVisualStyleBackColor = true;
@@ -199,7 +200,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
-            ClientSize = new Size(575, 400);
+            ClientSize = new Size(957, 641);
             Controls.Add(login_showPass);
             Controls.Add(login_btn);
             Controls.Add(login_password);
